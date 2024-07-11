@@ -1,12 +1,12 @@
-
+import { Box } from "@mui/material"
 
 
 const Home = () => {
   return (
 
-    <>
-    Home
-    </>
+    <Box>
+      hello world
+    </Box>
 
   )
 }
