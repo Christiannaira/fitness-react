@@ -48,6 +48,7 @@ const HeroBanner = () => {
     >
 
       Exercise
+      
     </Typography>
 
 

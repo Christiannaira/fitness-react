@@ -23,3 +23,13 @@ body {
     height: 900px;
     margin-top: -330px;
 }
+
+/*responsiveness set-up*/
+
+@media screen and (max-width: 1200px) {
+
+    .hero-banner-img {
+        display: none;
+    }
+
+}
