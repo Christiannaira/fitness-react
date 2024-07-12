@@ -24,6 +24,11 @@ body {
     margin-top: -330px;
 }
 
+.bodyPart-card {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+}
+
 
 
 /*responsiveness set-up*/
