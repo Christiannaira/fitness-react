@@ -6,7 +6,7 @@ const SearchExercises = () => {
 
   const [search, setSearch] = useState('');
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
 
     alert(search);
 
