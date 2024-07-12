@@ -10,10 +10,10 @@ import BodyPart from './BodyPart';
 
 const LeftArrow = () => {
 
-    const {scorllPrev} = useContext(VisibilityContext);
+    const {scrollPrev} = useContext(VisibilityContext);
 
     return (
-        <Typography onClick={() => scorllPrev()} className="right-arrow">
+        <Typography onClick={() => scrollPrev()} className="right-arrow">
             <img src={LeftArrowIcon} alt="right-arrow" />
         </Typography>
     )
@@ -22,10 +22,10 @@ const LeftArrow = () => {
 
 const RightArrow = () => {
 
-    const {scorllNext} = useContext(VisibilityContext);
+    const {scrollNext} = useContext(VisibilityContext);
 
     return (
-        <Typography onClick={() => scorllNext()} className="left-arrow">
+        <Typography onClick={() => scrollNext()} className="left-arrow">
             <img src={RightArrowIcon} alt="left-arrow" />
         </Typography>
     )
