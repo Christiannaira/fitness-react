@@ -1,6 +1,8 @@
 
 import { Box, Button, Stack, TextField, Typography } from "@mui/material"
-import { useState } from "react"
+import { useState } from "react";
+import { exerciseOptions, fetchData } from "../utils/fetchData";
+
 
 const SearchExercises = () => {
 
@@ -8,8 +10,7 @@ const SearchExercises = () => {
 
   const handleSearch = async () => {
 
-    alert(search);
-
+   
   }
 
   return (
