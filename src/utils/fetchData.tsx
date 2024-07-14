@@ -2,10 +2,6 @@
 
 export const exerciseOptions = {
     method: 'GET',
-    params: {
-      limit: 20,
-      offset: '0'
-    },
     headers: {
       'x-rapidapi-key': '1e8571aaf4msh6c0ad5a8f8c2affp1e9d7ejsnc63beb1b3a52',
       'x-rapidapi-host': 'exercisedb.p.rapidapi.com'
