@@ -5,6 +5,8 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 
 import HorizontalScrollbar from "./HorizontalScrollbar";
 
+import ExerciseCard from "./ExerciseCard";
+
 
 const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
 
