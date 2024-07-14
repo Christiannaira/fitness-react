@@ -21,7 +21,7 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
 
     }
 
-    fetchExercisesData();
+    // fetchExercisesData();
 
   }, [])
 
@@ -38,6 +38,7 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
       || item.bodyPart.toLowerCase().includes(search),
       );
 
+      // console.log(exercisesData); 
       console.log(searchedExercises);
       setSearch('');
       setExercises(searchedExercises);
@@ -93,8 +94,6 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
         </Box>
 
         <Box sx={{position: 'relative', width: '100%', p: '20px'}}>
-
-          hello
 
             <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
 
