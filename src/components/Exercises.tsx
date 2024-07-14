@@ -7,6 +7,10 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
 
 const Exercises = ({exercises, setExercises, bodyPart}) => {
+
+  const limitedExerciseLists = exercises.slice(0, 10);
+  const restExerciseLists = exercises.slice(11);
+
   return (
     <Box id="exercsies" sx={{mt: {lg: '110px'}}} mt="50px" p="20px">
 
@@ -16,7 +20,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
 
     <Stack direction="row" sx={{gap: {lg: '110px', xs: '50px'}}} flexWrap="wrap" justifyContent="center">
     {
-      exercises.map((exercise, index) => (
+      limitedExerciseLists.map((exercise, index) => (
         <ExerciseCard  key={index} exercise={exercise}/>
       ))
     }
@@ -27,7 +31,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
           exercises.length > 9 && (
             <Pagination
               color="standard"
-            
+              
             />
           )
         }
