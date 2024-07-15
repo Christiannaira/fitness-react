@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Box, Stack, Typography } from '@mui/material';
 
+import Loader from './Loader';
+
 const ExerciseVideos = ({exerciseVideos, name}) => {
 
   let exerciseVideoLists = exerciseVideos.contents;
