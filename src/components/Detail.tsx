@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Detail = () => {
+const Detail = ({exerciseDetail}) => {
   return (
     <div>
 Detail
