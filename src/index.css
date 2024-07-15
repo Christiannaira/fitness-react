@@ -104,6 +104,11 @@ body {
         height: 300px;
     }
 
+    /* .left-arrow,
+    .right-arrow {
+        position: static !important;
+    } */
+
     .hero-banner-img {
         display: none;
     }

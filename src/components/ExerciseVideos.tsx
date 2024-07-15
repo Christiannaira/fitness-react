@@ -6,8 +6,9 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
 
   let exerciseVideoLists = exerciseVideos.contents;
 
-  console.log(exerciseVideoLists);
-  if (!exerciseVideoLists.length) return <p>he</p>;
+  // console.log(exerciseVideoLists);
+  
+  // if (exerciseVideoLists.length > 0) return <p>he</p>;
 
 
   return (
