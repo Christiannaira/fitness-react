@@ -85,6 +85,15 @@ body {
     border: 1px solid #FF2625 !important;
 }
 
+.exercise-video {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 387px;
+    height: 381px; 
+    text-decoration: none;
+}
+
 
 /*responsiveness set-up*/
 
@@ -101,6 +110,11 @@ body {
     
     .exercise-card {
         width: 320px;
+    }
+
+    .exercise-video {
+        width: 320px;
+        height: 300px;
     }
 
 }
