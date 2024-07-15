@@ -26,6 +26,8 @@ const ExerciseDetail = () => {
 
     }
 
+    fetchExercisesData();
+
   }, [id]);
 
   return (
