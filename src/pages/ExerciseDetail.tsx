@@ -12,6 +12,9 @@ const ExerciseDetail = () => {
 
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
+  const [targetMuscleExercises, setTargetMuscleExercises] = useState([]);
+  const [equipmentExercises, setEquipmentExercises] = useState([]);
+
   const {id} = useParams(); 
 
   useEffect(() => {
@@ -22,12 +25,16 @@ const ExerciseDetail = () => {
       const youtubeSearchUrl = 'https://youtube-search-and-download.p.rapidapi.com';
 
       const exerciseDetailData = await fetchData(`${exerciseDbUrl}/exercises/exercise/${id}`, exerciseOptions);
-
       setExerciseDetail(exerciseDetailData);
 
       const exerciseVideosData = await fetchData(`${youtubeSearchUrl}/search?query=${exerciseDetailData.name} exercise`, youtubeSearchOptions);
-
       setExerciseVideos(exerciseVideosData);
+      
+      const targetMuscleExerciseData = await fetchData(`${exerciseDbUrl}/exercises/target/${exerciseDetailData.target}`, exerciseOptions);
+      setTargetMuscleExercises(targetMuscleExerciseData);
+      
+      const equipmentExercisesData = await fetchData(`${exerciseDbUrl}/exercises/equipment/${exerciseDetailData.equipment}`, exerciseOptions);
+      setEquipmentExercises(equipmentExercisesData);
 
 
     }
@@ -42,7 +49,7 @@ const ExerciseDetail = () => {
       
       <Detail exerciseDetail={exerciseDetail}/>
       <ExerciseVideos exerciseVideos={exerciseVideos} name={exerciseDetail.name}/>
-      <SimilarExercises/>
+      <SimilarExercises targetMuscleExercises={targetMuscleExercises} equipmentExercises={equipmentExercises}/>
 
     </Box>
   )
