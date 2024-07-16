@@ -7,7 +7,7 @@ import Loader from './Loader';
 
 const SimilarExercises = ({targetMuscleExercises}) => {
 
-  console.log(targetMuscleExercises);
+  // console.log(targetMuscleExercises);
 
   return (
     <Box sx={{mt: {lg: '100px', xs: '0px'}}}>
@@ -18,11 +18,9 @@ const SimilarExercises = ({targetMuscleExercises}) => {
 
       <Stack direction="row" sx={{p: 2, position: 'relative'}}>
 
-      {targetMuscleExercises.length !== 0? <h1>hello world</h1> : <Loader/>}
+      {targetMuscleExercises.length !== 0? <HorizontalScrollbar data={targetMuscleExercises} /> : <Loader/>}
 
-      {targetMuscleExercises.map((item) => (
-        <h1>{item.name}</h1>
-      ))}
+    
 
 
       </Stack>
