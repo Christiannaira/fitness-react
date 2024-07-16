@@ -9,7 +9,7 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
   let exerciseVideoLists = exerciseVideos.contents;
 
   
-  // if (!exerciseVideoLists.length) return <Loader/>;
+  if (exerciseVideos.length) return <Loader/>;
 
 
   return (

@@ -104,10 +104,14 @@ body {
         height: 300px;
     }
 
-    /* .left-arrow,
+    .react-horizontal-scrolline-menu--scroll-container {
+        width: 500px;
+    }
+
+    .left-arrow,
     .right-arrow {
         position: static !important;
-    } */
+    }
 
     .hero-banner-img {
         display: none;
