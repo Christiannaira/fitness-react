@@ -1,8 +1,14 @@
 import React from 'react'
 
-import { Typography, Stack, Box  } from '@mui/material'
+import { Typography, Stack, Box  } from '@mui/material';
 
-const SimilarExercises = ({targetMuscleExercises, equipmentExercises}) => {
+import HorizontalScrollbar from './HorizontalScrollbar';
+import Loader from './Loader';
+
+const SimilarExercises = ({targetMuscleExercises}) => {
+
+  console.log(targetMuscleExercises);
+
   return (
     <Box sx={{mt: {lg: '100px', xs: '0px'}}}>
 
@@ -12,7 +18,12 @@ const SimilarExercises = ({targetMuscleExercises, equipmentExercises}) => {
 
       <Stack direction="row" sx={{p: 2, position: 'relative'}}>
 
-    {targetMuscleExercises}
+      {targetMuscleExercises.length !== 0? <h1>hello world</h1> : <Loader/>}
+
+      {targetMuscleExercises.map((item) => (
+        <h1>{item.name}</h1>
+      ))}
+
 
       </Stack>
 

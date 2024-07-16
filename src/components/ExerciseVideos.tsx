@@ -8,7 +8,6 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
 
   let exerciseVideoLists = exerciseVideos.contents;
 
-  console.log(exerciseVideoLists);
   
   // if (!exerciseVideoLists.length) return <Loader/>;
 
